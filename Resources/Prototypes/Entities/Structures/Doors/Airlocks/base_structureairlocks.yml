@@ -79,7 +79,7 @@
     fuel: 5
     time: 3
   - type: Airlock
-    openUnlitVisible: true
+    openUnlitVisible: true # Corvax-Resprite-Airlocks
   - type: NavMapDoor
   - type: DoorBolt
   - type: Appearance
@@ -129,7 +129,7 @@
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: Airtight
-    fixVacuum: true
+    noAirWhenFullyAirBlocked: false
   - type: RadiationBlocker
     resistance: 5
   - type: Occluder
