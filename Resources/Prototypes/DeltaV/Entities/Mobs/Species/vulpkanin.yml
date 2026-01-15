@@ -116,13 +116,70 @@
     - VulpEmotes
   - type: Inventory
     speciesId: vulpkanin
+#LPP EDIT START
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _LP/Mobs/Species/displacement.rsi
+            state: jumpsuit
+            copyToShaderParameters:
+              # Value required, provide a dummy. Gets overridden when applied.
+              layerKey: dummy
+              parameterTexture: displacementMap
+              parameterUV: displacementUV
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _LP/Mobs/Species/displacement.rsi
+            state: shoes
+            copyToShaderParameters:
+              # Value required, provide a dummy. Gets overridden when applied.
+              layerKey: dummy
+              parameterTexture: displacementMap
+              parameterUV: displacementUV
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: _LP/Mobs/Species/displacement.rsi
+            state: jumpsuit
+            copyToShaderParameters:
+              # Value required, provide a dummy. Gets overridden when applied.
+              layerKey: dummy
+              parameterTexture: displacementMap
+              parameterUV: displacementUV
     femaleDisplacements:
       jumpsuit:
         sizeMaps:
           32:
-            sprite: Mobs/Species/Human/displacement.rsi
+            sprite: _LP/Mobs/Species/displacement.rsi
             state: jumpsuit-female
-
+            copyToShaderParameters:
+              # Value required, provide a dummy. Gets overridden when applied.
+              layerKey: dummy
+              parameterTexture: displacementMap
+              parameterUV: displacementUV
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _LP/Mobs/Species/displacement.rsi
+            state: shoes
+            copyToShaderParameters:
+              # Value required, provide a dummy. Gets overridden when applied.
+              layerKey: dummy
+              parameterTexture: displacementMap
+              parameterUV: displacementUV
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: _LP/Mobs/Species/displacement.rsi
+            state: jumpsuit-female
+            copyToShaderParameters:
+              # Value required, provide a dummy. Gets overridden when applied.
+              layerKey: dummy
+              parameterTexture: displacementMap
+              parameterUV: displacementUV
+#LPP EDIT END
 - type: entity
   save: false
   name: Vulpkanin Dummy
